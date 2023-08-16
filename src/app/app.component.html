@@ -4,11 +4,50 @@
     <img src="../assets/cold.jpeg" alt="cold image" *ngIf="14 <= 15">
     <div class="weather_data">
       <div class="location">Chennai</div>
-    <div class="temperature">{{32 | number :'1.0-0'}} °C</div>
+      <div class="temperature">{{32 | number :'1.0-0'}} °C</div>
     </div>
   </div>
   <div class="lower_data">
-    
+    <div class="more_info_label">
+      <div class="more_info_container">
+        <div class="info_block">
+          <div class="info_block_label">
+            <img src="../assets/hot.png" alt="windSpeed">
+            <span>Max Temperature</span>
+          </div>
+          <div class="info_block_value">
+            5kms
+          </div>
+        </div>
+        <div class="info_block">
+          <div class="info_block_label">
+            <img src="../assets/min.jpeg" alt="windSpeed">
+            <span>Min Temperature</span>
+          </div>
+          <div class="info_block_value">
+            5kms
+          </div>
+        </div>
+        <div class="info_block">
+          <div class="info_block_label">
+            <img src="../assets/wind.png" alt="windSpeed">
+            <span>windSpeed</span>
+          </div>
+          <div class="info_block_value">
+            5kms
+          </div>
+        </div>
+        <div class="info_block">
+          <div class="info_block_label">
+            <img src="../assets/humidity.png" alt="windSpeed">
+            <span>humidity</span>
+          </div>
+          <div class="info_block_value">
+            5kms
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
