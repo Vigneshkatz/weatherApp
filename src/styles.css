@@ -22,6 +22,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .container{
@@ -77,11 +79,13 @@ body{
 }
 .location{
     color: var(--white);
-    font-size: 1.2em;
+    font-size: 2em;
+    font-weight: 700;
+
 }
 .temperature{
     color: var(--white);
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
 
 }
@@ -133,7 +137,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .search input{
     background-color: var(--shadow-light);
     outline: none;
@@ -143,4 +146,8 @@ body{
     color: var(--grey-1);
     font-size: 1rem;
     text-align: center;
+}
+.search{
+    width: fit-content;
+    margin: 2rem auto;
 }
