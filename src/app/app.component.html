@@ -1,10 +1,16 @@
-<div class="container">
+
+<div class="search">
+  <form action="">
+    <input type="text" placeholder="Search City">
+  </form>
+</div>
+<div class="container" *ngIf="weatherData">
   <div class="upper_data">
-    <img src="../assets/hot.jpeg" alt="hot image" *ngIf="14 > 13">
-    <img src="../assets/cold.jpeg" alt="cold image" *ngIf="14 >= 15">
+    <img src="../assets/hot.jpeg" alt="hot image" *ngIf="weatherData.main.temp > 59 ">
+    <img src="../assets/cold.jpeg" alt="cold image" *ngIf="weatherData.main.temp <= 59">
     <div class="weather_data">
       <div class="location">Chennai</div>
-      <div class="temperature">{{32 | number :'1.0-0'}} °C</div>
+      <div class="temperature">{{ weatherData.main.temp| number :'1.0-0'}} °F</div>
     </div>
   </div>
   <div class="lower_data">
@@ -16,7 +22,7 @@
             <span>Max Temperature</span>
           </div>
           <div class="info_block_value">
-            5kms
+            {{weatherData.main.temp_max}} °F
           </div>
         </div>
         <div class="info_block">
@@ -25,7 +31,7 @@
             <span>Min Temperature</span>
           </div>
           <div class="info_block_value">
-            5kms
+            {{weatherData.main.temp_min}} °F
           </div>
         </div>
         <div class="info_block">
@@ -34,7 +40,7 @@
             <span>windSpeed</span>
           </div>
           <div class="info_block_value">
-            5kms
+            {{weatherData.wind.speed}} km/hr
           </div>
         </div>
         <div class="info_block">
@@ -43,7 +49,7 @@
             <span>humidity</span>
           </div>
           <div class="info_block_value">
-            5kms
+            {{weatherData.main.humidity}} %
           </div>
         </div>
       </div>

@@ -91,6 +91,7 @@ body{
     color: var(--white);
 }
 .more_info_container{
+    /* margin: 2rem; */
     position: absolute;
     height: 100%;
     flex: 1;
@@ -114,6 +115,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .info_block_label img{
     width: 2rem;
@@ -130,4 +132,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.search input{
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--grey-1);
+    font-size: 1rem;
+    text-align: center;
 }
